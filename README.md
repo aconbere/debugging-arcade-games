@@ -41,11 +41,13 @@ Note:
 
 When power has been verified to be good you can move onto testing the board.
 
-Needed Parts:
+### Needed Parts:
+
 * A service manual for the board
 * A multimeter
 
-Step 1:
+### Step 1:
+
 * Ensure the machine is unplugged
 * Reconnect the board to power
 * Reconnect the board to the monitor and audio
@@ -54,18 +56,19 @@ Step 1:
 - If you don't get video output: go to step 2.
 - If you get video output go to Step 7:
 
-Step 2:
+### Step 2:
+
 * If you can't hear audio go to step 3
 * If you can hear audio go to step 6:
 
-Step 3:
+### Step 3:
 
 Without audio or video your job just got harder, but it's still not impossible. First you want to ensure that power is infact getting to your board. Most systems will run on +5v but may have several other voltages that are delivered to the board for various sub systems (audio, vector processing, etc). Often times aboard may have a power LED to help test this but even with the power LED we want to get a good multimeter reading to ensure the quality of the power. To test this most arcade boards will have several test points labeld on the board (a ring and a label with the correct voltage). If you don't see anything like this refer to your service manual to see if there's any notes.
 
 * If you board is not getting good power go to step 4:
 * If you board has good power go to Step 5.
 
-Step 4:
+### Step 4:
 
 If your board isn't getting power, but you've validated clean power from the power supply in the previous section, then there are several possibilities:
 
@@ -76,22 +79,22 @@ If your board isn't getting power, but you've validated clean power from the pow
 
 If none of these have found the fault move on to Step 5;
 
-Step 5:
+### Step 5:
 
 Well this is bad, your board is getting clean power, but you don't have audio or video out. That means there's an error on the board itself, but this still isn't the end! It's just the end of what I can help with. At this point the debugging is machine dependant. You'll want the board manuals and schematics if possible. As examples of the kinds of issues I've repaired: A capicitor in the power rail was broken off and causing +5v to be open, a crystal had broken off and was causing the CPU to have no clock, a logic chip had failed that was preventing the CPU from initializing correctly. When fixing these kinds of errors it usually involves hunting around with a logic probe, an oscilloscope, and a multimeter to trace out the operation of the machine one chip at a time.
 
-Step 6:
+### Step 6:
 
 If your machine boots up and you have audio but no video, you have a machine that is what we call "playing blind". This is good news because it means the board is running in some capacity! From this point you should look up how to run a self test in the service manual to diagnose any other potential issues. But otherwise should continue to the Monitor section.
 
-Step 7:
+### Step 7:
 
 If your machine boots up and you're getting video is the video:
 
 * Roughly correct but missing colors or distored or wobbly? If so go to the Monitor Section.
 * Missing sprites, oddly garblged, totally incomprehensible? If so go to Step 8.
 
-Step 8:
+### Step 8:
 
 You potentially have bugs in the board that are impacting the boards ability to output valid video signals.
 
